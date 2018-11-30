@@ -10,8 +10,8 @@ app.use(bodyParser.json())
 // Add a bit of logging
 app.use(morgan('short'))
 app.get('/', function (req, res) {
-  res.send('hello world');
-}
+  res.send('hello yasuo');
+})
   /*
 // Get all the users defined
 app.get('/', function (req, res) {
