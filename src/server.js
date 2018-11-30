@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 
 // Add a bit of logging
 app.use(morgan('short'))
-
+/*
 // Get all the users defined
 app.get('/', function (req, res) {
   models.User.findAll()
@@ -33,7 +33,7 @@ app.post('/', function(req, res) {
 models.sequelize.sync().then(function() {
   /**
    * Listen on provided port, on all network interfaces.
-   * 
+   *
    * Listen only when database connection is sucessfull
    */
   app.listen(3000, function() {
