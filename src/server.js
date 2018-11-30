@@ -7,7 +7,6 @@ const models = require('./models/index');
 // Decode json and x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-
 // Add a bit of logging
 app.use(morgan('short'))
 /*
@@ -36,7 +35,7 @@ models.sequelize.sync().then(function() {
    *
    * Listen only when database connection is sucessfull
    */
-  app.listen(3000, function() {
+  app.listen(process.env.PORT, function() {
     console.log('Express server listening on port 3000');
   });
 });
